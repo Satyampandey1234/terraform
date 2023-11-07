@@ -6,13 +6,7 @@ terraform {
     }
   }
 }
-/*
-provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIA6KX5DAAMJYSPHRNW"
-  secret_key = "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"
-}
-*/
+
 
 provider "aws" {
   region = "us-east-1"
