@@ -24,14 +24,8 @@ resource "aws_instance" "web" {
       #create_before_destroy = true
     }
 
-  provisioner "local-exec" {
-      command= "echo ${aws_instance.web.private_ip} >> output.txt"
-    
-    }  
-  provisioner "remote-exec" {
-      inline = [ "sudo apt-get install apache2 -y" ]
-  }
-}
+  
+  
 output "instanceIP" {
   value = aws_instance.web.public_ip
 
