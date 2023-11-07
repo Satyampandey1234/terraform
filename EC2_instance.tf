@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = var.name
+   # Name = var.name
   }
   lifecycle {
       #create_before_destroy = true
